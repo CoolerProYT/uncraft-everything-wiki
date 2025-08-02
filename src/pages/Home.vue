@@ -184,25 +184,25 @@ export default {
                     minecraftVersion: "1.16.5",
                     modLoader: ["forge", "fabric"],
                     bugFix: "✅",
-                    latestVersion: "1.6.7"
+                    latestVersion: "1.6.8"
                 },
                 {
                     minecraftVersion: "1.18.2",
                     modLoader: ["forge"],
                     bugFix: "✅",
-                    latestVersion: "1.6.7"
+                    latestVersion: "1.6.8"
                 },
                 {
                     minecraftVersion: "1.19.2",
                     modLoader: ["forge"],
                     bugFix: "✅",
-                    latestVersion: "1.6.7"
+                    latestVersion: "1.6.8"
                 },
                 {
                     minecraftVersion: "1.20.1",
                     modLoader: ["forge", "fabric"],
                     bugFix: "✅",
-                    latestVersion: "1.6.7"
+                    latestVersion: "1.6.8"
                 },
                 {
                     minecraftVersion: "1.20.6",
@@ -214,37 +214,37 @@ export default {
                     minecraftVersion: "1.21.1",
                     modLoader: ["neoforge", "forge", "fabric"],
                     bugFix: "✅",
-                    latestVersion: "1.6.7"
+                    latestVersion: "1.6.8"
                 },
                 {
                     minecraftVersion: "1.21.4",
                     modLoader: ["neoforge", "fabric"],
                     bugFix: "✅",
-                    latestVersion: "1.6.7"
+                    latestVersion: "1.6.8"
                 },
                 {
                     minecraftVersion: "1.21.5",
                     modLoader: ["neoforge", "forge", "fabric"],
                     bugFix: "✅",
-                    latestVersion: "1.6.7"
+                    latestVersion: "1.6.8"
                 },
                 {
                     minecraftVersion: "1.21.6",
                     modLoader: ["forge", "fabric"],
                     bugFix: "✅",
-                    latestVersion: "1.6.7"
+                    latestVersion: "1.6.8"
                 },
                 {
                     minecraftVersion: "1.21.7",
                     modLoader: ["neoforge", "forge", "fabric"],
                     bugFix: "✅",
-                    latestVersion: "1.6.7"
+                    latestVersion: "1.6.8"
                 },
                 {
                     minecraftVersion: "1.21.8",
                     modLoader: ["neoforge", "forge", "fabric"],
                     bugFix: "✅",
-                    latestVersion: "1.6.7"
+                    latestVersion: "1.6.8"
                 }
             ]
         };
