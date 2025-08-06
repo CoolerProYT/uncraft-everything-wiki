@@ -172,6 +172,34 @@
                         </div>
                     </div>
                 </div>
+                <div class="mt-4 scroll-mt-18" id="restrictedModIngredients">
+                    <span class="text-3xl font-bold">Restricted Mod Ingredients</span>
+                    <div>
+                        <p class="text-lg text-gray-300 mt-4">
+                            The restrictions section allows you to define items from which mod ingredients should not be used when uncrafting.
+                        </p>
+                        <p class="text-lg text-gray-300 mt-4">
+                            <code class="bg-gray-800 text-gray-200 px-1 rounded">productivetrees</code> and <code class="bg-gray-800 text-gray-200 px-1 rounded">chipped</code> are restricted by default.
+                        </p>
+                        <p class="text-lg text-gray-300 mt-4 italic">
+                            Note: This helps avoid potential issues such as "packet failed to send" errors caused by excessive recipe combinations, and also prevents possible exploits.
+                        </p>
+                        <div class="mt-4">
+                            <span class="text-2xl font-bold">Restricted Mod Ingredients</span>
+                            <p class="text-lg text-gray-300 mt-4">
+                                It accept a list of mod id, <code class="bg-gray-800 text-gray-200 px-1 rounded">minecraft</code> is not accepted, only mod id that is not vanilla.
+                            </p>
+                            <UniversalTable :datas="restrictedModIngredients" />
+                        </div>
+                        <div class="mt-4">
+                            <span class="text-2xl font-bold">Example</span>
+                            <p class="text-lg text-gray-300 mt-4">
+                                Here is an example of how to set up the restricted mod items in the config file:
+                            </p>
+                            <MarkdownRenderer :source="restrictedModIngredientsSection" />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -184,6 +212,7 @@
                 <AnchorLink id="allowUnSmithing" name="Allow UnSmithing" :active-section="activeSection" :is-sub="true" />
                 <AnchorLink id="allowDamaged" name="Allow Damaged" :active-section="activeSection" :is-sub="true" />
                 <AnchorLink id="preventModdedIngredients" name="Prevent Modded Ingredients From Vanilla Items" :active-section="activeSection" :is-sub="true" />
+                <AnchorLink id="restrictedModIngredients" name="Restricted Mod Ingredients" :active-section="activeSection" :is-sub="true" />
             </div>
         </div>
     </div>
@@ -199,7 +228,7 @@ import UniversalTable from "@/components/UniversalTable.vue";
 
 const activeSection = ref(null);
 
-const sections = ['commonConfig', 'restrictions', 'allowEnchanted', 'experience', 'allowUnSmithing', 'allowDamaged', 'preventModdedIngredients'];
+const sections = ['commonConfig', 'restrictions', 'allowEnchanted', 'experience', 'allowUnSmithing', 'allowDamaged', 'preventModdedIngredients', 'restrictedModIngredients'];
 
 const restrictionTypes = [
     { restriction_type: 'BLACKLIST', description: 'Item defined in restrictions will not be able to uncraft.' },
@@ -244,6 +273,11 @@ const preventModdedIngredients = [
     { prevent_modded_ingredients: 'false', description: 'Allow modded recipes with modded ingredients from being outputted when uncrafting vanilla items.' }
 ];
 
+const restrictedModIngredients = [
+    { format: 'productivetrees', description: 'All items from productivetrees will no longer able to be selected when uncrafting.' },
+    { format: 'chipped', description: 'All items from chipped will no longer able to be selected when uncrafting.' },
+];
+
 const restrictionSection = `# Press F3 + h in game and hover over item to check their modid:name
 [Restrictions]
 \trestrictionType = "BLACKLIST"
@@ -271,6 +305,9 @@ const allowDamagedSection = `[AllowDamaged]
 const preventModdedIngredientsSection = `[PreventModdedIngredientsFromVanillaItems]
 \tpreventModdedIngredientsFromVanillaItems = true
 `;
+
+const restrictedModIngredientsSection = `[RestrictedModIngredients]
+\trestrictedModIngredients = ["productivetrees", "chipped"]`;
 
 let observer;
 
