@@ -17,7 +17,21 @@ const versions = [
 // Detect current version from URL
 const currentVersion = computed(() => {
     const path = page.value.relativePath
-    const found = versions.find(v => path.startsWith(v.path.replace(/^\//, '')))
+
+    // Sort versions by path length (longest first) to match most specific first
+    const sortedVersions = [...versions].sort((a, b) => {
+        const pathA = a.path.replace(/^\//, '')
+        const pathB = b.path.replace(/^\//, '')
+        return pathB.length - pathA.length
+    })
+
+    const found = sortedVersions.find(v => {
+        const versionPath = v.path.replace(/^\//, '')
+        // Empty path (root) should only match if no other version matches
+        if (versionPath === '') return true
+        return path.startsWith(versionPath)
+    })
+
     return found?.label || versions[0].label
 })
 
