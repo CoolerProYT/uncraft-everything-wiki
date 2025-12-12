@@ -66,7 +66,81 @@ export default {
     font-family: 'Minecraft';
     src: url('/minecraft.otf') format('truetype');
 }
+
 .minecraft-font {
     font-family: 'Minecraft';
+}
+
+.minecraft-gui {
+    background-color: #c6c6c6;
+    border: 4px solid #373737;
+    border-top-color: #FFFFFF;
+    border-left-color: #FFFFFF;
+    padding: 0.5rem;
+    max-width: 28rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.minecraft-gui > .w-full {
+    width: 100%;
+    background-color: #c6c6c6;
+}
+
+.minecraft-gui .bg-c6 {
+    background-color: #C6C6C6;
+}
+
+.minecraft-gui .text-white {
+    color: white;
+}
+
+.minecraft-gui .text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.minecraft-gui .px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.minecraft-gui .text-left {
+    text-align: left;
+}
+
+.minecraft-gui .p-2 {
+    padding: 0.5rem;
+}
+
+.minecraft-gui .flex {
+    display: flex;
+}
+
+.minecraft-gui .items-center {
+    align-items: center;
+}
+
+.minecraft-gui .justify-between {
+    justify-content: space-between;
+}
+
+.minecraft-gui .relative {
+    position: relative;
+}
+
+.minecraft-gui .hidden {
+    display: none;
+}
+
+/* Responsive: md breakpoint (768px and up) */
+@media (min-width: 768px) {
+    .minecraft-gui .md\:block {
+        display: block;
+    }
+
+    .minecraft-gui .md\:hidden {
+        display: none;
+    }
 }
 </style>

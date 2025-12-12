@@ -5,21 +5,16 @@ layout: home
 hero:
   name: "Uncraft Everything Wiki"
   text: "Wiki for Minecraft Mod - Uncraft Everything"
-  tagline: My great project tagline
+  tagline: Uncraft Everything with one click
+  image:
+    src: /logo.png
+    alt: Uncraft Everything logos
   actions:
     - theme: brand
       text: Mod Information
-      link: /v2.x.x/getting-started
+      link: /getting-started
     - theme: alt
       text: Configurations
-      link: /api-examples
-
-features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      link: /client-config
 ---
 

@@ -1,14 +1,3 @@
-# Dependencies
 node_modules
-
-# VitePress cache and build output
-.vitepress/cache
-.vitepress/dist
-
-# Local environment variables (if used)
-.env
-.env.*
-
-# OS temporary files
-.DS_Store
-*.log
+docs/.vitepress/cache
+docs/.vitepress/dist

@@ -9,8 +9,9 @@ const isOpen = ref(false)
 
 // List all versions with their paths
 const versions = [
-    {label: 'v2.x.x', path: '/v2.x.x/getting-started'},
-    {label: 'v1.x.x', path: '/v1.0.0/'}
+    {label: 'v2.0.0+', path: '/'},
+    {label: 'v1.8.2+', path: '/v1.8.2/'},
+    {label: 'v1.x.x', path: '/v1.x.x/'}
 ]
 
 // Detect current version from URL
@@ -23,8 +24,14 @@ const currentVersion = computed(() => {
 // Navigate on selection
 function switchVersion(v) {
     const currentPath = router.route.path
-    let newPath = currentPath.replace(/\/v[^/]+\//, `${v.path}`)
-    if(!newPath.startsWith(v.path)) newPath = v.path
+
+    // Extract the page name (everything after the version directory)
+    const pageMatch = currentPath.match(/\/v[^/]+\/(.+)$/)
+    const pageName = pageMatch ? pageMatch[1] : 'getting-started.html'
+
+    // Build new path with selected version
+    const newPath = `${v.path}${pageName}`
+
     router.go(newPath)
 }
 

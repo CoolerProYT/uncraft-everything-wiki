@@ -15,9 +15,9 @@ Uncraft Everything can be downloaded on CurseForge and Modrinth.
 
 A list of version that support v2.0.0+
 
-| Mod Loader              | Minecraft Version |
-|-------------------------|:-----------------:|
-| NeoForge, Fabric, Forge |      1.21.11      |
+| Mod Loader              | Minecraft Version |    Maintaining     |
+|-------------------------|:-----------------:|:------------------:|
+| NeoForge, Fabric, Forge |      1.21.11      | :white_check_mark: |
 
 ::: info
 `1.20.1` and `1.21.1` wil be ported to `v2.0.0` once it is stable
