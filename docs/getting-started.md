@@ -24,6 +24,14 @@ A list of version that support v2.0.0+
 :::
 
 ## What's new in v2.x.x
+
+::: details 2.0.1
+#### Fixes
+- Fixed selected recipe auto reset to default one when the screen is opened by player.
+- Fixed recipe selection not updating when screen remains open while uncrafting (Fabric)
+- Fixed no recipe found for damaged netherite tools/armors
+:::
+
 ::: details 2.0.0
 #### Addition
 - Added Auto Uncrafting Table
