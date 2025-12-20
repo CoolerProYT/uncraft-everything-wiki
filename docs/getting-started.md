@@ -18,12 +18,19 @@ A list of version that support v2.0.0+
 | Mod Loader              | Minecraft Version |    Maintaining     |
 |-------------------------|:-----------------:|:------------------:|
 | NeoForge, Fabric, Forge |      1.21.11      | :white_check_mark: |
+| NeoForge                |      1.21.1       | :white_check_mark: |
 
 ::: info
 `1.20.1` and `1.21.1` wil be ported to `v2.0.0` once it is stable
 :::
 
-## What's new in v2.x.x
+## What's new in v2.x.x (1.21.11)
+
+::: details 2.0.2
+#### Fixes
+- Fixed enchanted item unable to uncraft when `allowEnchantedItem` is `true` but `outputEnchantedBook` is `false`
+- Added localization for all the new texts (Translated by Gemini, might be inaccurate)
+:::
 
 ::: details 2.0.1
 #### Fixes

@@ -19,7 +19,7 @@ A list of version that support v1.8.2+
 |-------------------------|:-----------------:|:------------------:|
 | NeoForge, Fabric, Forge |      1.21.10      |        :x:         |
 | NeoForge, Fabric, Forge |      1.21.8       |        :x:         |
-| NeoForge, Fabric, Forge |      1.21.1       | :white_check_mark: |
+| Fabric, Forge           |      1.21.1       | :white_check_mark: |
 | Fabric, Forge           |      1.20.1       | :white_check_mark: |
 
 ::: info
