@@ -83,6 +83,13 @@ See also [`FTB Quest Progression Config`](/ftb-quest-progression-config).
 |-----------------------|---------|---------|-----------------------------------------------------------------------------------------|
 | `outputEnchantedBook` | Boolean | `false` | When uncrafting enchanted items, outputs an Enchanted Book containing the enchantments. |
 
+### RecipeSelectionOrder
+
+| Setting                             | Type    | Default | Description                                                              |
+|-------------------------------------|---------|---------|--------------------------------------------------------------------------|
+| `prioritizeVanillaIngredientRecipe` | Boolean | `true`  | Recipe selection should prioritize recipe with more vanilla ingredients. |
+
+
 ## Config File
 
 The common config file can be found under `config/uncrafteverything-common.toml`. Below will include an example of how
@@ -120,6 +127,10 @@ the config file will look like:
 
 [OutputEnchantedBook]
 	outputEnchantedBook = false
+	
+[RecipeSelectionOrder]
+	prioritizeVanillaIngredientRecipe = true
+
 ```
 
 :::

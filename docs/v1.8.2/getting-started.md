@@ -15,15 +15,14 @@ Uncraft Everything can be downloaded on CurseForge and Modrinth.
 
 A list of version that support v1.8.2+
 
-| Mod Loader              | Minecraft Version |    Maintaining     |
-|-------------------------|:-----------------:|:------------------:|
-| NeoForge, Fabric, Forge |      1.21.10      |        :x:         |
-| NeoForge, Fabric, Forge |      1.21.8       |        :x:         |
-| Fabric, Forge           |      1.21.1       | :white_check_mark: |
-| Fabric, Forge           |      1.20.1       | :white_check_mark: |
+| Mod Loader              | Minecraft Version | Maintaining |
+|-------------------------|:-----------------:|:-----------:|
+| NeoForge, Fabric, Forge |      1.21.8       |     :x:     |
+| Fabric, Forge           |      1.21.1       |     :x:     |
+| Fabric                  |      1.20.1       |     :x:     |
 
 ::: info
-`1.20.1` and `1.21.1` wil be ported to `v2.0.0` once it is stable
+Since most Fabric and Forge (after 1.21) players are playing on `1.21.10+`, Fabric `1.20.1`, `1.21.1` and Forge `1.21.1`, there is currently no plan to port them to `v2.0.0` 
 :::
 
 ## What's new in v1.8.2

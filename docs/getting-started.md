@@ -15,16 +15,23 @@ Uncraft Everything can be downloaded on CurseForge and Modrinth.
 
 A list of version that support v2.0.0+
 
-| Mod Loader              | Minecraft Version |    Maintaining     |
-|-------------------------|:-----------------:|:------------------:|
-| NeoForge, Fabric, Forge |      1.21.11      | :white_check_mark: |
-| NeoForge                |      1.21.1       | :white_check_mark: |
+| Mod Loader              | Minecraft Version | Maintaining |
+|-------------------------|:-----------------:|:-----------:|
+| NeoForge, Fabric, Forge |      1.21.11      |     :x:     |
+| NeoForge, Fabric, Forge |      1.21.10      |     :x:     |
+| NeoForge                |      1.21.1       |     :x:     |
+| Forge                   |      1.20.1       |     :x:     |
 
-::: info
-`1.20.1` and `1.21.1` wil be ported to `v2.0.0` once it is stable
+::: warning No longer updated (Except critical bug)
+Version below Minecraft 26.1 will no longer be maintained due to the code has major different between `1.20.1`, `1.21.1` and `26.1`
 :::
 
 ## What's new in v2.x.x (1.21.11)
+
+::: details 2.1.0
+#### Addition
+- Added new common config field prioritizeVanillaIngredientRecipe to sort recipe selection order
+:::
 
 ::: details 2.0.2
 #### Fixes
